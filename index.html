@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tono Portfolio</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  /* Photo container */
+  .photo-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 4px solid transparent;
+    transition: border-color 0.4s ease;
+  }
+
+  /* The photo */
+  .profile-photo {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+    display: block;
+  }
+
+  /* Zoom effect */
+  .photo-container:hover .profile-photo {
+    transform: scale(2.12);
+  }
+
+  /* Hover text */
+  .hover-text {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.65);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.45s ease;
+    pointer-events: none;
+  }
+
+  .photo-container:hover .hover-text {
+    bottom: 12px;
+    opacity: 1;
+  }
+
+  /* Border glow */
+  .photo-container:hover {
+    border-color: #4f8bff;
+    box-shadow: 0 0 15px rgba(79,139,255,0.7);
+  }
+
+  /* Dark mode */
+  .dark-mode {
+    background: #121212;
+    color: #eaeaea;
+  }
+  .dark-mode .hover-text {
+    background: rgba(255,255,255,0.2);
+  }
+</style>
+</head>
+<body>
+
+<h1>Tono<br>(Gunarto Wibisono)</h1>
+
+<a href="./public/about.html" class="photo-container">
+  <img class="profile-photo" src="/4.1+Webpages/assets/images/TGW_1538.JPG" alt="Tono portrait" />
+  <div class="hover-text">About Me</div>
+</a>
+
+<p>Digital Transformation & Process Optimization Leader | Photographer by Passion | Architectural Thinker by Training</p>
+
+<style>
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 24px;       /* sama seperti space-x-6 */
+    padding: 12px 0;
+    border-bottom: 1px solid #d1d5db; /* gray-200 */
+    font-family: sans-serif;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+    color: #374151; /* gray-700 */
+    font-size: 16px;
+  }
+
+  .nav-bar a:hover {
+    color: #1d4ed8; /* blue-700 */
+    cursor: pointer;
+  }
+</style>
+
+<nav class="nav-bar">
+  <a href="#professional">Professional</a>
+  <a href="#creative">Creative</a>
+  <a href="./public/contact.html">Contact</a>
+</nav>
+
+<section id="professional" style="padding: 50px; max-width: 1200px; margin: auto;">
+  <h2 style="text-align:center; font-size: 28px; font-weight: bold; margin-bottom: 40px;">
+    Professional Journey
+  </h2>
+
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  ">
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 12px;">
+      <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+        Banking & Technology
+      </h3>
+      <p style="text-align: justify;">
+        Over 26 years of experience across operations, remittance, IT, and change management in leading banks such as Citi and Deutsche Bank. Led automation and host-to-host integration initiatives approved by IDX, and held ownership of nine enterprise applications.
+      </p>
+    </div>
+
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 12px;">
+      <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+        Process Optimization & IoT Design
+      </h3>
+      <p style="text-align: justify;">
+        Designed IoT-based system architecture for utility recording at 3 Towers Residences to transform manual operations into digital processes. Integrated Node-RED monitoring and Modbus optimization for cost-effective scalability.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="creative" style="padding: 50px; max-width: 1200px; margin: auto;">
+  <h2 style="text-align:center; font-size: 28px; font-weight: bold; margin-bottom: 40px;">
+    Creative Works
+  </h2>
+
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  ">
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 12px;">
+      <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+        Architecture & Sketches
+      </h3>
+      <p style="text-align: justify;">
+         Early works include designs of light and economical housing projects and architectural sketches reflecting functional minimalism.     </p>
+    </div>
+
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 12px;">
+      <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+        Photography & Videography
+      </h3>
+      <p style="text-align: justify;">
+        Passion for capturing light, structure, and human stories. Created event documentaries and visual storytelling projects featured on YouTube and photography platforms.
+      </p>
+    </div>
+
+      <div style="border: 1px solid #ddd; padding: 20px; border-radius: 12px;">
+      <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">
+        DIY & Engineering
+      </h3>
+      <p style="text-align: justify;">
+        Passion for capturing light, structure, and human stories. Created event documentaries and visual storytelling projects featured on YouTube and photography platforms.
+      </p>
+    </div>
+  </div>
+</section>
+
+</body>
+
+</html>
+<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+
+<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+
+<!-- TODO 4: Add titles/subtitles etc. -->
+
+<!-- TODO 5: Add a link to the project pages -->
+
+<!-- TODO 6: Add images to show the project previews
+HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+
+<!-- TODO 7: Add the Contact Me and About Me page links -->
